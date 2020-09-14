@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-09-14T03:20:08-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Lucas Villela</title><subtitle>Devaneios e aventuras num curso de vida e de Ciência da Computação pela UNESP, tenho interesse em desenvolvimento e segurança da informação (SIGINT)</subtitle><entry><title type="html">Upload de um programa em assembly para o Arduíno</title><link href="http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html" rel="alternate" type="text/html" title="Upload de um programa em assembly para o Arduíno" /><published>2020-08-04T16:32:34-03:00</published><updated>2020-08-04T16:32:34-03:00</updated><id>http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino</id><content type="html" xml:base="http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html">&lt;p&gt;Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.&lt;/p&gt;
+
+&lt;p&gt;Para fazer manualmente, foi utilizado as ferramentas avra e avrdude, pois não conseguia executar os programas proprietários da Atmel por algum motivo (máquina virtual do windows). Então decidi fazer tudo na mão!&lt;/p&gt;
+
+&lt;p&gt;Em um arquivo texto, criei o seguinte código que faz um led piscar no meu arduíno com o 328p&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-assembly&quot; data-lang=&quot;assembly&quot;&gt;.device atmega328p ; especifica que o dispositivo é o atmega328p
+.org 0x0000 ; determina o início do bloco de memória
+
+.equ DDRB = 4 ; determina a porta de saída
+.equ PortB = 5 ; determina a porta de saída
+
+rjmp main ; pula pro label main:
+ 
+main:
+ldi r16, 0xFF ; aqui, pegamos o número hexa 0xFF que é 255 em decimal e
+;11111111 em binário, ou seja, todos os bits estão ativados e
+;salvamos essa informação no registrador r16
+out DDRB, r16 ; aqui determina o pino utilizado como saída (1 saída e 0 entrada)
+loop:
+sbi PortB, 0x4 ; seta como 1 o pino 0x4 da PortB
+cbi PortB, 0x4 ; seta como 0 o pino da 0x4 da PortB
+rjmp loop&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Depois que fizemos esse código simples, podemos transformar ele usando o avrdude e aí teremos o nosso .hex que poderemos fazer o upload do código para o atmel no nosso arduíno.&lt;/p&gt;
+
+&lt;p&gt;Em distribuições baseadas em Debian, podemos instalar usando o apt:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;avrdude avra&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Depois da instalação você pode criar um arquivo com os comandos abaixo, onde o avra é o assembler que vamos utilizar e o avrdude faz o upload, no caso estou usando um chip da atmel328p e para especificar isso pro avrdude é a opção -p, recomendo o manual do &lt;a href=&quot;https://linux.die.net/man/1/avrdude&quot;&gt;avra&lt;/a&gt; e do &lt;a href=&quot;https://linux.die.net/man/1/avrdude&quot;&gt;avrdude&lt;/a&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;#! /bin/bash&lt;/span&gt;
+avra &lt;span class=&quot;nt&quot;&gt;-fI&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;NOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; 1&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;
+avrdude &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; arduino &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; m328p &lt;span class=&quot;nt&quot;&gt;-P&lt;/span&gt; /dev/&lt;span class=&quot;nv&quot;&gt;$2&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; 115200 &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; flash:w:&lt;span class=&quot;nv&quot;&gt;$NOME&lt;/span&gt;.hex
+&lt;span class=&quot;nb&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;cof&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;obj&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;hex&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;O que este código acima faz? Basicamente o $1 é uma variável ambiente, onde temos uma fila, no caso da primeira linha o $0 é a string avra, o $2 é -fI e o $3 é o $1, porém, quando executamos o script usando o “./script.sh arquivo.asm” por exemplo, é criada uma nova fila e a $1 nesse caso é o arquivo.asm, que será transformado em binário. Se quiser saber mais sobre shell script, recomendo o livro &lt;a href=&quot;https://s3.novatec.com.br/capitulos/capitulo-9788575221525.pdf&quot;&gt;Shell Script Profissional&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Após de salvar o arquivo, dê as permissões para que seja executado com os comandos e em seguida execute:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;chmod&lt;/span&gt; +x nome-arquivo.sh
+./nome-do-arquivo.sh programa.asm /dev/ttyUSB0&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Observação: Veja o endereço do seu arduíno usando o Arduíno IDE, no meu caso era /dev/ttyUSB0, mas o seu pode ser diferente!&lt;/p&gt;</content><author><name></name></author><category term="assembly" /><category term="arduino" /><category term="atmel328p" /><summary type="html">Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.</summary></entry></feed>

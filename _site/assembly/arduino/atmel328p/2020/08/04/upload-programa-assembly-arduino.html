@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Upload de um programa em assembly para o Arduíno | Lucas Villela</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Upload de um programa em assembly para o Arduíno" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema." />
+<meta property="og:description" content="Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema." />
+<link rel="canonical" href="http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html" />
+<meta property="og:url" content="http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html" />
+<meta property="og:site_name" content="Lucas Villela" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-04T16:32:34-03:00" />
+<script type="application/ld+json">
+{"headline":"Upload de um programa em assembly para o Arduíno","dateModified":"2020-08-04T16:32:34-03:00","datePublished":"2020-08-04T16:32:34-03:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html"},"url":"http://localhost:4000/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html","description":"Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Lucas Villela" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Lucas Villela</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/sobre/">Sobre</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Upload de um programa em assembly para o Arduíno</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-08-04T16:32:34-03:00" itemprop="datePublished">Aug 4, 2020
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.</p>
+
+<p>Para fazer manualmente, foi utilizado as ferramentas avra e avrdude, pois não conseguia executar os programas proprietários da Atmel por algum motivo (máquina virtual do windows). Então decidi fazer tudo na mão!</p>
+
+<p>Em um arquivo texto, criei o seguinte código que faz um led piscar no meu arduíno com o 328p</p>
+
+<figure class="highlight"><pre><code class="language-assembly" data-lang="assembly">.device atmega328p ; especifica que o dispositivo é o atmega328p
+.org 0x0000 ; determina o início do bloco de memória
+
+.equ DDRB = 4 ; determina a porta de saída
+.equ PortB = 5 ; determina a porta de saída
+
+rjmp main ; pula pro label main:
+ 
+main:
+ldi r16, 0xFF ; aqui, pegamos o número hexa 0xFF que é 255 em decimal e
+;11111111 em binário, ou seja, todos os bits estão ativados e
+;salvamos essa informação no registrador r16
+out DDRB, r16 ; aqui determina o pino utilizado como saída (1 saída e 0 entrada)
+loop:
+sbi PortB, 0x4 ; seta como 1 o pino 0x4 da PortB
+cbi PortB, 0x4 ; seta como 0 o pino da 0x4 da PortB
+rjmp loop</code></pre></figure>
+
+<p>Depois que fizemos esse código simples, podemos transformar ele usando o avrdude e aí teremos o nosso .hex que poderemos fazer o upload do código para o atmel no nosso arduíno.</p>
+
+<p>Em distribuições baseadas em Debian, podemos instalar usando o apt:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt <span class="nb">install </span>avrdude avra</code></pre></figure>
+
+<p>Depois da instalação você pode criar um arquivo com os comandos abaixo, onde o avra é o assembler que vamos utilizar e o avrdude faz o upload, no caso estou usando um chip da atmel328p e para especificar isso pro avrdude é a opção -p, recomendo o manual do <a href="https://linux.die.net/man/1/avrdude">avra</a> e do <a href="https://linux.die.net/man/1/avrdude">avrdude</a>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#! /bin/bash</span>
+avra <span class="nt">-fI</span> <span class="nv">$1</span> <span class="nv">$2</span>
+<span class="nv">NOME</span><span class="o">=</span><span class="si">$(</span><span class="nb">echo</span> <span class="nv">$1</span> | <span class="nb">cut</span> <span class="nt">-d</span> <span class="nb">.</span> <span class="nt">-f</span> 1<span class="si">)</span>
+avrdude <span class="nt">-c</span> arduino <span class="nt">-p</span> m328p <span class="nt">-P</span> /dev/<span class="nv">$2</span> <span class="nt">-e</span> <span class="nt">-F</span> <span class="nt">-b</span> 115200 <span class="nt">-U</span> flash:w:<span class="nv">$NOME</span>.hex
+<span class="nb">rm</span> <span class="k">*</span>cof<span class="k">*</span> <span class="k">*</span>obj<span class="k">*</span> <span class="k">*</span>hex</code></pre></figure>
+
+<p>O que este código acima faz? Basicamente o $1 é uma variável ambiente, onde temos uma fila, no caso da primeira linha o $0 é a string avra, o $2 é -fI e o $3 é o $1, porém, quando executamos o script usando o “./script.sh arquivo.asm” por exemplo, é criada uma nova fila e a $1 nesse caso é o arquivo.asm, que será transformado em binário. Se quiser saber mais sobre shell script, recomendo o livro <a href="https://s3.novatec.com.br/capitulos/capitulo-9788575221525.pdf">Shell Script Profissional</a></p>
+
+<p>Após de salvar o arquivo, dê as permissões para que seja executado com os comandos e em seguida execute:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">chmod</span> +x nome-arquivo.sh
+./nome-do-arquivo.sh programa.asm /dev/ttyUSB0</code></pre></figure>
+
+<p>Observação: Veja o endereço do seu arduíno usando o Arduíno IDE, no meu caso era /dev/ttyUSB0, mas o seu pode ser diferente!</p>
+
+
+  </div><a class="u-url" href="/assembly/arduino/atmel328p/2020/08/04/upload-programa-assembly-arduino.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Lucas Villela</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Lucas Villela</li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/lcsvillela"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">lcsvillela</span></a></li><li><a href="https://www.twitter.com/lcsvillela"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">lcsvillela</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Devaneios e aventuras num curso de vida e de Ciência da Computação pela UNESP, tenho interesse em desenvolvimento e segurança da informação (SIGINT)</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
