@@ -20,7 +20,7 @@
 
 title: Lucas Villela
 description: >- # this means to ignore newlines until "baseurl:"
-    Devaneios e aventuras num curso de vida e de Ciência da Computação pela UNESP, tenho interesse em desenvolvimento e segurança da informação (SIGINT)
+    Devaneios e aventuras num curso Ciência da Computação pela UNESP e de vida, tenho interesse em desenvolvimento e segurança da informação (SIGINT)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lcsvillela.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lcsvillela
