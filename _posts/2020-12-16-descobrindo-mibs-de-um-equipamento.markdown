@@ -28,7 +28,7 @@ Porém, a surpresa aqui é que quando realizamos a requisição com o comando sn
 
 {% highlight bash %}
 snmpwalk -c public -v2c 192.168.10.120 .1 | cut -d : -f 1 | uniq
-{% highlight bash %}
+{% endhighlight %}
 
 Com este comando, fazemos uma requisição para o IP 192.168.10.120 para consultar todas as OIDs que começam com .1, ou seja, teremos tudo! Depois redirecionamos com o '|' essa saída de texto enorme para o comando cut, onde delimitamos com a opção '-d' os campos pelo caractere ':' e qual campo queremos com a opção '-f'. E finalmente, redirecionamos para o comando uniq, que elimina linhas iguais e por consequência, recebemos uma lista limpa de quais MIBs o quipamento responde!
 
