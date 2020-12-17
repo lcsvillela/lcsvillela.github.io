@@ -28,6 +28,7 @@ github_username:  lcsvillela
 linkedin_username: lcsvillela
 # Build settings
 theme: minima
+permalink: "/:title:output_ext"
 plugins:
   - jekyll-feed
 
