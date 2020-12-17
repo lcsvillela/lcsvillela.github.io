@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Descobrindo quais MIBs um equipamento utiliza"
-date:   2020-09-30 17:32:34 -0300
+date:   2020-12-16 17:32:34 -0300
 categories: snmp monitoramento
 ---
 
