@@ -5,7 +5,7 @@ date:   2021-01-13 16:32:34 -0300
 categories: instagram 
 ---
 
-![image tooltip here](https://camo.githubusercontent.com/4cd0bf58a8cffad17820826a99facc2821a    8c50d/68747470733a2f2f692e696d6775722e636f6d2f734a7a665a734c2e6a7067){: style="float: left"     class="img-responsive" height="30%" width="30%"}
+![image tooltip here](https://camo.githubusercontent.com/4cd0bf58a8cffad17820826a99facc2821a8c50d/68747470733a2f2f692e696d6775722e636f6d2f734a7a665a734c2e6a7067){: style="float: left" class="img-responsive" height="30%" width="30%"}
 
 Todo ano ocorre o evento [EuroPython], sendo realizado a apresentação de projetos e mudanças na linguagem [Python]. Uma dessas palestras, estava o [Tim Großmann] falando sobre seu projeto [Instapy] (você pode ver o [projeto aqui]), que consistia em um [framework] para a automação de ações nas redes sociais. O fato é que as redes sociais são na realidade justamente o contrário do nome, são redes antisociais e que causam [problemas] e [mais problemas] psicológicos significativos, ou seja, se podemos automatizar as nossas ações na "rede social", então podemos nos afastar desses problemas e de quebra conseguir seguir pessoas de verdade.
 
