@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Criando um robô para o seu instagram"
+title:  "Criando um robô para o seu Instagram"
 date:   2021-01-13 16:32:34 -0300
 categories: instagram 
 ---
