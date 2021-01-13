@@ -6,7 +6,8 @@ categories: instagram
 ---
 
 ![image tooltip here](https://camo.githubusercontent.com/4cd0bf58a8cffad17820826a99facc2821a    8c50d/68747470733a2f2f692e696d6775722e636f6d2f734a7a665a734c2e6a7067){: style="float: left"     class="img-responsive" height="30%" width="30%"}
-Todo ano ocorre o evento [EuroPython], sendo realizado a apresentação de projetos e mudanças na linguagem [Python]. Uma dessas palestras, estava o [Tim Großmann] falando sobre seu projeto [Instapy], que cossistia em um [framework] para a automação de ações nas redes sociais. O fato é que as redes sociais são na realidade justamente o contrário do nome, são redes antisociais e que causam [problemas] e [mais problemas] psicológicos significativos, ou seja, se podemos automatizar as nossas ações na "rede social", então podemos nos afastar desses problemas e de quebra conseguir seguir pessoas de verdade.
+
+Todo ano ocorre o evento [EuroPython], sendo realizado a apresentação de projetos e mudanças na linguagem [Python]. Uma dessas palestras, estava o [Tim Großmann] falando sobre seu projeto [Instapy] (você pode ver o [projeto aqui]), que consistia em um [framework] para a automação de ações nas redes sociais. O fato é que as redes sociais são na realidade justamente o contrário do nome, são redes antisociais e que causam [problemas] e [mais problemas] psicológicos significativos, ou seja, se podemos automatizar as nossas ações na "rede social", então podemos nos afastar desses problemas e de quebra conseguir seguir pessoas de verdade.
 
 Großmann fez o framework de modo que tudo seja aleatório e vocẽ não precisa se preocupar em alterar as frequências de ações, ou seja, é uma imitação humana, você pode ler [este artigo] de como ele conseguiu 2500 seguidores em 6 meses, no meu caso, consegui 800 utilizando apenas meu notebook. Mas vamos ao que realmente importa:
 
@@ -125,9 +126,10 @@ que entregar um panfleto de propaganda na rua, não é mesmo?
 
 
 [EuroPython]: https://wiki.python.org/moin/EuroPython
-[Python]: https://www.youtube.com/watch?v=bGJ41J5b_90
+[Python]: https://www.youtube.com/watch?v=uOgDa1rlqjE
 [Tim Großmann]: https://twitter.com/timigrossmann
-[instapy]: https://github.com/timgrossmann/InstaPy
+[instapy]: https://www.youtube.com/watch?v=bGJ41J5b_90
+[projeto aqui]: https://github.com/timgrossmann/InstaPy
 [framework]: https://pt.wikipedia.org/wiki/Framework
 [problemas]: https://www.sciencedirect.com/science/article/abs/pii/S0924977X19313331
 [mais problemas]: https://www.sciencedirect.com/science/article/pii/S0747563217300493
