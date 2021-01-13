@@ -111,7 +111,7 @@ while contador != 0:
     contador-=1
 {% endhighlight %}
 
-Após isso, o programa está pronto, você só precisa salvar o arquivo. Agora, o pulo do gato é colocarmos isso para ser executado automaticamente agendando tarefas [no Windows] e [no Linux].
+Após isso, o programa está pronto, você só precisa salvar o arquivo. Agora, o pulo do gato é colocarmos isso para ser executado automaticamente agendando tarefas [no Windows] e [no Linux]. Coloque o agendamento para ocorrer apenas uma vez ao dia em seu computador, seguir mais do que 40 pessoas por dia pode fazer você sofrer com penalidades na plataforma do Instagram!
 
 <h2>Conclusão</h2>
 
