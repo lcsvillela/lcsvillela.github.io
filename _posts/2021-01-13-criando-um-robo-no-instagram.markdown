@@ -21,11 +21,11 @@ Depois de instalar o Python, abra o terminal do Windows ou do Linux e digite o s
 pip install instapy
 {% endhighlight %}
 
-Depois disso, você vai precisar instalar o Firefox e o GeckoDriver. Veja aqui as instruções.
+Depois disso, você vai precisar instalar o Firefox e o GeckoDriver. Veja aqui as instruções [para Windows] e [Linux!]
 
 <h2>Criando um robô simples</h2>
 
-O Instapy é extramente completo. Podemos, por exemplo, seguir perfis que seguem perfis; seguir perfis que são seguidos por perfis; seguir quem curtiu alguma publicação específica e muito mais! Você pode ver a documentação para saber mais clicando aqui. A ideia é criar um robô simples, que siga os perfis que seguem um perfil determinado.
+O Instapy é extramente completo. Podemos, por exemplo, seguir perfis que seguem perfis; seguir perfis que são seguidos por perfis; seguir quem curtiu alguma publicação específica e muito mais! Você pode ver a documentação para saber mais [clicando aqui]. A ideia é criar um robô simples, que siga os perfis que seguem um perfil determinado.
 
 Primeiro, precisamos importar as bibliotecas do Python. Para isso, abra um editor de texto qualquer - se você estiver no Windows, abra o Notepad e se estiver no Linux, abra o Vim ;)
 
@@ -40,7 +40,7 @@ from time import sleep
 
 Até aqui, apenas importamos as bibliotecas necessárias para iniciarmos a programação do nosso bot. Agora é onde começamos a realizar a mágica!
 
-Depois disso, nosso próximo passo será fazer o login em nossa conta no Instagram. Para isso, precisamos determinar os parâmetros de username, password e headless_browser. Este último define se o seu navegador ficará visível para você durante as ações. Como eu prefiro que não, coloquei True. Se você quiser ver seu navegador realizando as ações, coloque False.
+Depois disso, nosso próximo passo será fazer o login em nossa conta no Instagram. Para isso, precisamos determinar os parâmetros de **username**, **password** e **headless_browser**. Este último define se o seu navegador ficará visível para você durante as ações. Como eu prefiro que não, coloquei True. Se você quiser ver seu navegador realizando as ações, coloque **False**.
 
 {% highlight python %}
 settings()
@@ -51,8 +51,8 @@ sessao = insta(username="SeuUserSem@"
 sessao.login()
 {% endhighlight %}
 
-Aqui temos a configuração do tipo de usuários que não queremos seguir: skip_no_profile_pic define se vamos ou não
-seguir usuários que estão sem foto; no_profile_pic_percentage define quantas vezes isso acontecerá - no caso, 100% das vezes.
+Aqui temos a configuração do tipo de usuários que não queremos seguir: **skip_no_profile_pic** define se vamos ou não
+seguir usuários que estão sem foto; **no_profile_pic_percentage** define quantas vezes isso acontecerá - no caso, 100% das vezes.
 
 {% highlight python %}
 sessao.set_skip_users(skip_no_profile_pic=True,
@@ -64,9 +64,9 @@ sessao.set_skip_users(skip_no_profile_pic=True,
 Agora, a nossa ideia é fazer a mesma tarefa repetidas vezes, usando a estrutura de decisão while - que, no caso,
 sempre executa o código que pertence a ela (isso é definido pelo espaçamento no Python, diferentemente de C ou Java).
 
-Nesse sentido, o comando sessao.follow_user_followers primeiro chama a nossa seção definida com nossas credenciais e depois chama o método follow_user_followers, que faz com que sigamos usuários que seguem os perfis citados.
+Nesse sentido, o comando **sessao.follow_user_followers** primeiro chama a nossa seção definida com nossas credenciais e depois chama o método **follow_user_followers**, que faz com que sigamos usuários que seguem os perfis citados.
 
-No caso, coloquei dois perfis que são referência de conteúdo técnico brasileiro para mim: [PizzaDeDados] e [MenteBinaria]. Logo depois, definimos com amount a quantidade de perfis que vamos seguir. Com randomize definimos que a ação não será previsível, dando a impressão que somos humanos.
+No caso, coloquei dois perfis que são referência de conteúdo técnico brasileiro para mim: [PizzaDeDados] e [MenteBinaria]. Logo depois, definimos com **amount** a quantidade de perfis que vamos seguir. Com **randomize** definimos que a ação não será "muito" previsível, dando a impressão que somos humanos.
 
 Depois disso, a nossa seção é finalizada e o programa espera por 1200 segundos (20 minutos) e subtrai o contador para reiniciar esse ciclo.
 
@@ -115,7 +115,7 @@ Coloque o agendamento para ocorrer apenas uma vez ao dia em seu computador, pois
 
 <h2>Conclusão</h2>
 
-A automação pode nos livrar de uma tarefa simples e tediosa, que é seguir perfis no Instagram. Esse é um dos vários jeitos de impulsionar um perfil, tornando-se importante quando você é um profissional de [social media] com muitos perfis de Instagram para gerenciar, por exemplo.
+A automação pode nos livrar de uma tarefa simples e tediosa, que é seguir perfis no Instagram. Esse é um dos vários jeitos de impulsionar um perfil, tornando-se importante quando você é um profissional de social media com muitos perfis de Instagram para gerenciar, por exemplo.
 
 Se esse for o seu caso, fica o desafio: Use um programa pra acessar vários perfis automatizados. Assim você pode deixar o seu cliente mais satisfeito, pois os usuários que deram o "seguir de volta" existem de verdade e ficarão por tempo indeterminado te seguindo, sendo muito mais qualitativo do que entregar um panfleto de propaganda na rua, não é mesmo?
 
@@ -132,3 +132,6 @@ Se esse for o seu caso, fica o desafio: Use um programa pra acessar vários perf
 [Linux aqui]: https://python.org.br/instalacao-linux/
 [no Windows]: https://youtu.be/WWWoFsaLjK8
 [no Linux]: https://www.youtube.com/watch?v=zianAMUWlYA
+[para Windows]: https://take.net/blog/take-test/instalacao-geckodriver-driver-para-abrir-o-firefox-no-selenium
+[Linux!]: https://medium.com/beelabacademy/baixando-e-configurando-o-geckodriver-no-ubuntu-dc2fe14d91c
+[clicando aqui]: https://instapy.org/settings/
