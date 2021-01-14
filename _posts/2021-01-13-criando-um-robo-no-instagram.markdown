@@ -135,3 +135,5 @@ Se esse for o seu caso, fica o desafio: Use um programa pra acessar vários perf
 [para Windows]: https://take.net/blog/take-test/instalacao-geckodriver-driver-para-abrir-o-firefox-no-selenium
 [Linux!]: https://medium.com/beelabacademy/baixando-e-configurando-o-geckodriver-no-ubuntu-dc2fe14d91c
 [clicando aqui]: https://instapy.org/settings/
+[PizzaDeDados]:https://www.instagram.com/pizzadedados/
+[MenteBinaria]: https://www.instagram.com/mentebinaria_/
