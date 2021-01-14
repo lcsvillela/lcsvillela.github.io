@@ -136,4 +136,4 @@ Se esse for o seu caso, fica o desafio: Use um programa pra acessar vários perf
 [Linux!]: https://medium.com/beelabacademy/baixando-e-configurando-o-geckodriver-no-ubuntu-dc2fe14d91c
 [clicando aqui]: https://instapy.org/settings/
 [PizzaDeDados]:https://www.instagram.com/pizzadedados/
-[MenteBinaria]: https://www.instagram.com/mentebinaria_/
+[MenteBinaria]: https://www.instagram.com/mentebinaria_/{:target="_blank"}
