@@ -37,7 +37,7 @@ snmpwalk -c public -v2c 192.168.10.120 .1 | cut -d : -f 1 | uniq
 
 Com este comando, é feita uma requisição para que o IP 192.168.10.120 consulte todas as OIDs que começam com .1. Ou seja, teremos tudo!
 
-Depois, redireciona-se com o **|** essa saída de texto enorme para o comando **cut**, onde delimita-se com a opção **-d** os campos pelo caractere **:**, e qual campo se quer com a opção **-f**. E, finalmente, redireciona-se para o comando **uniq**, que elimina linhas iguais, resultando numa lista limpa de a quais MIBs o equipamento responde.
+Depois, redireciona-se com o __|__ essa saída de texto enorme para o comando **cut**, onde delimita-se com a opção **-d** os campos pelo caractere **:**, e qual campo se quer com a opção **-f**. E, finalmente, redireciona-se para o comando **uniq**, que elimina linhas iguais, resultando numa lista limpa de a quais MIBs o equipamento responde.
 
 Com isso, chegamos ao nosso objetivo, sabendo também todos os OIDs que estão funcionando :D
 
