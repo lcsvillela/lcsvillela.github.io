@@ -285,5 +285,5 @@ Twitter(argv[1], argv[2], argv[3])
 [estrutura de dicionário]: https://panda.ime.usp.br/pensepy/static/pensepy/11-Dicionarios/dicionarios.html
 [veja aqui como descobrir]: https://escoladedados.org/tutoriais/xpath-para-raspagem-de-dados-em-html/
 [código limpo]: https://becode.com.br/clean-code/
-[código completo]: https://github.com/lcsvillela/TwitterPy
+[código completo]: https://github.com/lcsvillela/MakeTweetPy
 [demonstração]: https://youtu.be/HmKHaXMvjoQ
