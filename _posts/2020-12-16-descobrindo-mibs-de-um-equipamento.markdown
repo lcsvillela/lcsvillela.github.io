@@ -3,6 +3,7 @@ layout: post
 title:  "Descobrindo quais MIBs um equipamento utiliza"
 date:   2020-12-16 17:32:34 -0300
 categories: snmp monitoramento
+image: https://user-images.githubusercontent.com/23728459/117733143-738a8c00-b1c7-11eb-915c-3ddaf1db3d97.png
 ---
 
 Existe um projeto chamado [Zabbix], que é extremamente útil quando temos uma rede de computadores bem grande para monitorar. Com ele podemos saber a temperatura de todos os computadores da rede, velocidade de disco e até mesmo (se o sensor existir) a temperatura da sala.
