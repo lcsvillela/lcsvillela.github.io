@@ -20,7 +20,7 @@ criarmos até mesmo estruturas de dados
 complexas que sejam dinâmicas ou 
 códigos mais enxutos e elásticos, 
 onde podemos fazer vários formatos na estrutura de dado,
-algo bastante abstrato.
+algo bem abstrato.
 
 Um ponteiro é um tipo de variável que não aponta
  para o valor de uma variável em si, mas sim para um endereço de memória.
