@@ -1,8 +1,10 @@
+
 ---
 layout: post
 title:  "Upload de um programa em assembly para o Arduíno"
 date:   2020-08-04 16:32:34 -0300
 categories: assembly arduino atmel328p
+image: https://user-images.githubusercontent.com/23728459/117732812-e47d7400-b1c6-11eb-9f8e-e72afbea897e.png
 ---
 
 Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.
