@@ -14,7 +14,7 @@ várias pessoas tem dificuldade em ponteiros e espero que isso seja útil,
  [O Fantástico mundo da linguagem C]{:target="_blank"}, se quiser se aprofundar,
  siga com o [curso da USP]{:target="_blank"}*
 
-![ponteiro](https://user-images.githubusercontent.com/23728459/117733288-b51b3700-b1c7-11eb-865b-9217721f558f.jpg){: style="float: left" class="img-responsive" height="60%" width="60%"} Um assunto muitas vezes ignorado na graduação ou mesmo em livros que passamos batido, é a indireção múltipla. 
+![ponteiro](https://user-images.githubusercontent.com/23728459/117733288-b51b3700-b1c7-11eb-865b-9217721f558f.jpg){: style="float: left; margin-right: 1em;" class="img-responsive" height="60%" width="60%"} Um assunto muitas vezes ignorado na graduação ou mesmo em livros que passamos batido, é a indireção múltipla. 
 Um recurso da linguagem C/C++ que permite 
 criarmos até mesmo estruturas de dados 
 complexas que sejam dinâmicas ou 
