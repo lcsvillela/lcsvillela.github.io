@@ -3,6 +3,7 @@ layout: post
 title:  "Tweetando com Selenium em 56 linhas!"
 date:   2021-04-15 20:00:34 -0300
 categories: programacao_python selenium
+image: https://user-images.githubusercontent.com/23728459/117733943-cf094980-b1c8-11eb-8226-9ad10e286962.png
 ---
 *Veja o [código completo]{:target="_blank"} e uma [demonstração]{:target="_blank"}!*
 
@@ -200,7 +201,7 @@ pois podemos fazer isso pelo terminal e até mesmo agendada utilizando o cron!
 As ideias afloram, mas algo que é de suma importância é a necessidade de criarmos um [código limpo]{:target="_blank"}, que
 facilite sua manutenção e potencialize sua reuzabilidade! Este código é uma biblioteca que permite a publicação no twitter,
 uma das várias funções da rede social, para extender este código basta realizar um import dela e utilizar as propriedades
-da programação orientada a objetos. Quem sabe...pode ser [nosso twitterpy]{:target="_blank"}?
+da programação orientada a objetos. Quem sabe...pode ser [nosso birdpy]{:target="_blank"}?
 
 Veja como ficou o código completo:
 {% highlight python linenos%}
@@ -281,7 +282,7 @@ Twitter(argv[1], argv[2], argv[3])
 [muitas coisas já aconteceram]: http://pythonclub.com.br/debugging-em-python-sem-ide.html
 [linha 2]: https://web.archive.org/web/20180309053826/http://www.secnetix.de/olli/Python/list_comprehensions.hawk
 [problemas psicológicos]: https://www.theatlantic.com/technology/archive/2017/07/how-twitter-fuels-anxiety/534021/
-[nosso twitterpy]: https://lcsvillela.github.io/criando-um-robo-no-instagram.html
+[nosso birdpy]: https://lcsvillela.github.io/criando-um-robo-no-instagram.html
 [estrutura de dicionário]: https://panda.ime.usp.br/pensepy/static/pensepy/11-Dicionarios/dicionarios.html
 [veja aqui como descobrir]: https://escoladedados.org/tutoriais/xpath-para-raspagem-de-dados-em-html/
 [código limpo]: https://becode.com.br/clean-code/
