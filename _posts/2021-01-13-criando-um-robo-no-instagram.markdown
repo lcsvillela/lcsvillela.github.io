@@ -3,6 +3,7 @@ layout: post
 title:  "Criando um robô para o seu Instagram"
 date:   2021-01-13 16:32:34 -0300
 categories: instagram 
+image: https://camo.githubusercontent.com/4cd0bf58a8cffad17820826a99facc2821a8c50d/68747470733a2f2f692e696d6775722e636f6d2f734a7a665a734c2e6a7067
 ---
 
 ![image tooltip here](https://camo.githubusercontent.com/4cd0bf58a8cffad17820826a99facc2821a8c50d/68747470733a2f2f692e696d6775722e636f6d2f734a7a665a734c2e6a7067){: style="float: left" class="img-responsive" height="30%" width="30%"}
