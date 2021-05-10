@@ -3,6 +3,8 @@ layout: post
 title:  "Ponteiros e indireção múltipla"
 date:   2021-04-13 19:32:34 -0300
 categories: programacao_C
+image: https://user-images.githubusercontent.com/23728459/117733288-b51b3700-b1c7-11eb-865b-9217721f558f.jpg
+
 ---
 
 *Aviso: Você precisa saber o básico de C para entender este texto, 
@@ -12,7 +14,7 @@ várias pessoas tem dificuldade em ponteiros e espero que isso seja útil,
  [O Fantástico mundo da linguagem C]{:target="_blank"}, se quiser se aprofundar,
  siga com o [curso da USP]{:target="_blank"}*
 
-Um assunto muitas vezes ignorado na graduação ou mesmo em livros que passamos batido, é a indireção múltipla. 
+![ponteiro](https://user-images.githubusercontent.com/23728459/117733288-b51b3700-b1c7-11eb-865b-9217721f558f.jpg){: style="float: left" class="img-responsive" height="30%" width="30%"} Um assunto muitas vezes ignorado na graduação ou mesmo em livros que passamos batido, é a indireção múltipla. 
 Um recurso da linguagem C/C++ que permite 
 criarmos até mesmo estruturas de dados 
 complexas que sejam dinâmicas ou 
