@@ -3,7 +3,7 @@ layout: post
 title:  "Bash pra que te quero!"
 date:   2021-05-10 20:00:34 -0300
 categories: programacao_bash linux
-image: https://user-images.githubusercontent.com/23728459/117757604-c3cd1280-b1f6-11eb-8493-523560ed10eb.png
+image: https://user-images.githubusercontent.com/23728459/117758196-eb70aa80-b1f7-11eb-822a-1f5760d8e4f0.png
 ---
 
 Um dos meus primeiros livros sobre [Linux]{:target="\_blank"}, foi o
