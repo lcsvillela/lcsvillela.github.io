@@ -8,7 +8,7 @@ image: https://user-images.githubusercontent.com/23728459/117758196-eb70aa80-b1f
 
 Um dos meus primeiros livros sobre [Linux]{:target="\_blank"}, foi o
 [Shell Script Profissional]{:target="\_blank"}, um livro que revirou de ponta
-cabeça tudo o que achava que sabia e o que não sabia. O Bash é muito mais do
+cabeça tudo o que achava que sabia e o que não sabia. O [Bash]{:target="\_blank"} é muito mais do
 que a linha de comando, é a alavanca que podemos usar para [mover o mundo]{:target="\_blank"}!
 
 Além deste livro, destaco também a importância do
@@ -179,7 +179,7 @@ Nada pior do que um programa que não se pode editar!
 
 Além disso, quanto mais você dominar o Linux, mais você vai dominar o Shell Script, permitindo que você mesmo crie até mesmo novos comandos (ora bolas, crie
 seu binário e jogue no /bin). O Shell em geral, é considerado uma linguagem de
-programação do tipo "cola" como Lua. Podemos criar um programa em Java, um em Python e talvez outro em PHP e unificar o funcionamento dos três usando bash e seus redirecionadores!
+programação do tipo "cola" como [Lua]{:target="_blank"}. Podemos criar um programa em Java, um em Python e talvez outro em PHP e unificar o funcionamento dos três usando Bash e seus redirecionadores!
 
 Algo a se considerar, é que o Linux ensina ele mesmo à você, leia a [manpage]{:target="_blank"} dos comandos usados aqui digitando em seu terminal:
 
@@ -207,3 +207,5 @@ que o Bash é em C, o Python é em C (que C é em C rs) e que elas tem muitas co
 [Shell Script Profissional]: https://www.shellscript.com.br/
 [mover o mundo]: https://mundoeducacao.uol.com.br/matematica/uso-das-proporcoes-na-teoria-alavancas.htm
 [Bitcoin]: https://pt.wikipedia.org/wiki/Bitcoin
+[Lua]: https://pt.wikipedia.org/wiki/Lua_(linguagem_de_programa%C3%A7%C3%A3o)
+[Bash]: https://pt.wikipedia.org/wiki/Bash
