@@ -210,3 +210,5 @@ que o Bash é em C, o Python é em C (que C é em C rs) e que elas tem muitas co
 [Lua]: https://pt.wikipedia.org/wiki/Lua_(linguagem_de_programa%C3%A7%C3%A3o)
 [Bash]: https://pt.wikipedia.org/wiki/Bash
 [Conceitos de Linguagens de Programação]: https://duckduckgo.com/?q="Conceitos+de+Linguagens+de+Programação"+Robert+Sebesta
+[vim]: https://pt.wikipedia.org/wiki/Vim
+[chmod]: manpages.org/chmod
