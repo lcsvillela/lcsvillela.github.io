@@ -12,7 +12,7 @@ cabeça tudo o que achava que sabia e o que não sabia. O [Bash]{:target="\_blan
 que a linha de comando, é a alavanca que podemos usar para [mover o mundo]{:target="\_blank"}!
 
 Além deste livro, destaco também a importância do
-[Conceitos de Linguagens de Programação], que faz a gente ter uma percepção
+[Conceitos de Linguagens de Programação]{:target="\_blank"}, que faz a gente ter uma percepção
 um pouco além da luz. Analisando a flexibilidade, facilidade de leitura e outros aspectos da linguagem.
 
 <h2>Seu primeiro .sh</h2>
@@ -209,3 +209,4 @@ que o Bash é em C, o Python é em C (que C é em C rs) e que elas tem muitas co
 [Bitcoin]: https://pt.wikipedia.org/wiki/Bitcoin
 [Lua]: https://pt.wikipedia.org/wiki/Lua_(linguagem_de_programa%C3%A7%C3%A3o)
 [Bash]: https://pt.wikipedia.org/wiki/Bash
+[Conceitos de Linguagens de Programação]: https://duckduckgo.com/?q="Conceitos+de+Linguagens+de+Programação"+Robert+Sebesta
