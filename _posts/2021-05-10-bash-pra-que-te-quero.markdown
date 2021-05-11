@@ -206,3 +206,4 @@ que o Bash é em C, o Python é em C (que C é em C rs) e que elas tem muitas co
 [Linux]: https://pt.wikipedia.org/wiki/Linux
 [Shell Script Profissional]: https://www.shellscript.com.br/
 [mover o mundo]: https://mundoeducacao.uol.com.br/matematica/uso-das-proporcoes-na-teoria-alavancas.htm
+[Bitcoin]: https://pt.wikipedia.org/wiki/Bitcoin
