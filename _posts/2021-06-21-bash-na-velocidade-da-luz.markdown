@@ -277,3 +277,4 @@ da linguagem (inclusive Ruby é usado nos servidores do Github, uma linguagem qu
 [bioinformática]: https://www.ufrgs.br/bioinfo/o-que-e-bioinformatica/
 [Perl]: https://pt.wikipedia.org/wiki/Perl
 [Projeto GNU]: https://www.gnu.org/gnu/gnu.html
+[Telegram]: https://core.telegram.org/bots/api
