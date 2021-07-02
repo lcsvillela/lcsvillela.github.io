@@ -3,6 +3,7 @@ layout: post
 title:  "Bash na velocidade da luz"
 date:   2021-07-1 20:00:34 -0300
 categories: programacao_bash linux
+description: "Acelere seus programas utilizando processamento paralelo e viaje na velocidade da luz!"
 image: https://user-images.githubusercontent.com/23728459/124209653-56d04d80-dac0-11eb-9e10-6e1b87d8a2e2.jpg
 ---
 
