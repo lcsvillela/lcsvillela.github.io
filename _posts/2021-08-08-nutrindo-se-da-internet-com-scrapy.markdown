@@ -18,7 +18,7 @@ já é muito conhecido, no caso o www.pensador.com, com cerca de 2 milhões de
 frases de autores mais diversos(a ideia não é baixar todas aqui).
 O que poderíamos fazer com isso?
 
-![matrix](https://user-images.githubusercontent.com/23728459/117733943-cf094980-b1c8-11eb-8226-9ad10e286962.png){: style="float: left; margin-right: 1em;" class="img-responsive" height="55%" width="55%"} Com as frases,
+Com as frases,
 poderíamos por exemplo criar um perfil no twitter que publicasse uma frase 
 aleatória a cada 10 minutos de um autor aleatório por exemplo. Seria um perfil
 muito legal! Mas apesar de ser um projeto interessante, ainda é algo simples e
