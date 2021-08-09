@@ -6,7 +6,7 @@ categories: programacao_python selenium
 description: "Criando um programa para twitar por você sem usar a API do Twitter"
 image: https://user-images.githubusercontent.com/23728459/117733943-cf094980-b1c8-11eb-8226-9ad10e286962.png
 ---
-*Veja o [código completo]{:target="_blank"} e uma [demonstração]{:target="_blank"}!*
+*Veja o [código completo]{:target="_blank"} atualizado e uma [demonstração]{:target="_blank"}!*
 
 O [Selenium]{:target="\_blank"} é um [framework]{:target="\_blank"} que consegue automatizar ações no seu navegador,
 então podemos utilizá-lo para fazer tarefas online em sites complexos, 
@@ -287,5 +287,5 @@ Twitter(argv[1], argv[2], argv[3])
 [estrutura de dicionário]: https://panda.ime.usp.br/pensepy/static/pensepy/11-Dicionarios/dicionarios.html
 [veja aqui como descobrir]: https://escoladedados.org/tutoriais/xpath-para-raspagem-de-dados-em-html/
 [código limpo]: https://becode.com.br/clean-code/
-[código completo]: https://github.com/lcsvillela/MakeTweetPy
+[código completo]: https://github.com/lcsvillela/twitterbot
 [demonstração]: https://youtu.be/HmKHaXMvjoQ
