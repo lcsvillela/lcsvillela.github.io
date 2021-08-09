@@ -2,11 +2,13 @@
 layout: post
 title:  "Pacman de informação - Web Scraping com Scrapy"
 date:   2021-08-08 22:00:34 -0300
-categories: python webscraping
+categories: python webscraping selenium scrapy
 description: Não basta extrair os dados, é necessário dar um destino a eles! Automatizando publicações de frases legais e aleatórias no Twitter.
-image: https://user-images.githubusercontent.com/23728459/128670187-0db991b0-d2b8-4b3b-bb9c-97b413fe0625.jpg
+image: https://user-images.githubusercontent.com/23728459/128713195-c0e9308c-8a79-444a-ba04-2a5e34e500c3.jpg
 ---
-![ponteiro](https://user-images.githubusercontent.com/23728459/128670187-0db991b0-d2b8-4b3b-bb9c-97b413fe0625.jpg){: style="float: left; margin-right: 1em;" cla    ss="img-responsive" height="62%" width="62%"}
+![ponteiro](https://user-images.githubusercontent.com/23728459/128713195-c0e9308c-8a79-444a-ba04-2a5e34e500c3.jpg){: style="float: left; margin-right: 1em;" cla    ss="img-responsive" height="62%" width="62%"}
+
+
 Com a internet temos muita informação disponível, são
 [terabytes]{:target="\_blank"}, ou melhor, [zettabytes]{:target="\_blank"}
 de informação
