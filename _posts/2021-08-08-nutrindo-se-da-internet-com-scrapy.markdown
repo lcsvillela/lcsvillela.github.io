@@ -6,7 +6,7 @@ categories: python webscraping
 description: Não basta extrair os dados, é necessário dar um destino a eles! Automatizando publicações de frases legais e aleatórias no Twitter.
 image: https://user-images.githubusercontent.com/23728459/128670187-0db991b0-d2b8-4b3b-bb9c-97b413fe0625.jpg
 ---
-![ponteiro](https://user-images.githubusercontent.com/23728459/128670187-0db991b0-d2b8-4b3b-bb9c-97b413fe0625.jpg){: style="float: left; margin-right: 1em;" cla    ss="img-responsive" height="60%" width="60%"}
+![ponteiro](https://user-images.githubusercontent.com/23728459/128670187-0db991b0-d2b8-4b3b-bb9c-97b413fe0625.jpg){: style="float: left; margin-right: 1em;" cla    ss="img-responsive" height="58%" width="58%"}
 Com a internet temos muita informação disponível, são
 [terabytes]{:target="\_blank"}, ou melhor, [zettabytes]{:target="\_blank"}
 de informação
