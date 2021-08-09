@@ -3,6 +3,7 @@ layout: post
 title:  "Tweetando com Selenium em 56 linhas!"
 date:   2021-04-15 20:00:34 -0300
 categories: programacao_python selenium
+description: "Criando um programa para twitar por você sem usar a API do Twitter"
 image: https://user-images.githubusercontent.com/23728459/117733943-cf094980-b1c8-11eb-8226-9ad10e286962.png
 ---
 *Veja o [código completo]{:target="_blank"} e uma [demonstração]{:target="_blank"}!*
