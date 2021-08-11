@@ -16,7 +16,7 @@ geradas pelas pessoas no ano de 2021! O que fazemos é alimentar a matrix
 com nossa informação, porém como a matrix faz para se alimentar dessa
 quantidade absurda de informação?
 [A extração de dados em massa]{:target="\_blank"} é um dos muitos jeitos de
-alimentar a matrix, aqui vou utilizar o um site de frases que
+alimentar a matrix, aqui vou utilizar um site de frases que
 já é muito conhecido, no caso o www.pensador.com, com cerca de 2 milhões de
 frases de autores mais diversos(a ideia não é baixar todas aqui).
 O que poderíamos fazer com isso?
