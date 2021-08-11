@@ -7,9 +7,9 @@ categories: assembly arduino atmel328p
 image: https://user-images.githubusercontent.com/23728459/117732812-e47d7400-b1c6-11eb-9f8e-e72afbea897e.png
 ---
 
-Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como afinal realizar o upload para o processador usado no arduíno que tenho, portanto escrevi um simples shell script que resolveu o problema.
+Fiz um código para o processador Atmel328p e não achei nenhum conteúdo de qualidade em português de como realizar o upload para o processador usado no arduíno, portanto escrevi um simples script em bash que resolveu o problema.
 
-Para fazer manualmente, foi utilizado as ferramentas avra e avrdude, pois não conseguia executar os programas proprietários da Atmel por algum motivo (máquina virtual do windows). Então decidi fazer tudo na mão!
+Para fazer manualmente, foi utilizado as ferramentas [avra]{:target="\_blank"} e [avrdude]{:target="\_blank"}, pois não conseguia executar os programas proprietários da Atmel por algum motivo (máquina virtual do windows). Então decidi fazer tudo na mão!
 
 Em um arquivo texto, criei o seguinte código que faz um led piscar no meu arduíno com o 328p
 
@@ -33,7 +33,7 @@ cbi PortB, 0x4 ; seta como 0 o pino da 0x4 da PortB
 rjmp loop
 {% endhighlight %}
 
-Depois que fizemos esse código simples, podemos transformar ele usando o avrdude e aí teremos o nosso .hex que poderemos fazer o upload do código para o atmel no nosso arduíno.
+Depois que fizemos esse código simples, podemos transformar ele usando o avrdude e aí teremos o nosso .hex, que poderemos fazer o upload do código para o atmel no nosso arduíno.
 
 Em distribuições baseadas em Debian, podemos instalar usando o apt:
 
@@ -41,7 +41,7 @@ Em distribuições baseadas em Debian, podemos instalar usando o apt:
 sudo apt install avrdude avra
 {% endhighlight %}
 
-Depois da instalação você pode criar um arquivo com os comandos abaixo, onde o avra é o assembler que vamos utilizar e o avrdude faz o upload, no caso estou usando um chip da atmel328p e para especificar isso pro avrdude é a opção -p, recomendo o manual do [avra] e do [avrdude].
+Depois da instalação você pode criar um arquivo com os comandos abaixo, onde o avra é o assembler que vamos utilizar e o avrdude faz o upload do nosso código, no caso estou usando um chip da atmel328p e para especificar isso pro avrdude é a opção -p, recomendo o manual do [avra] e do [avrdude].
 
 {% highlight bash %}
 #! /bin/bash
