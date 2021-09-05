@@ -1,87 +1,89 @@
 ---
 layout: post
-title:  "Querido Diário - Monitorando o governo de Americana/SP"
+title:  "Muitas ferramentas - uma ideia: Webscraping"
 date:   2021-08-27 16:00:34 -0300
-categories: python webscraping scrapy
-description: Aqui descrevo como contribuí para o projeto Querido Diário, o qual tem o propósito de baixar todos os diários oficiais do Brasil, sendo um ótimo meio de monitorar ações do governo
+categories: python webscraping scrapy bash curl
+description: A gente não usa motosserra para descascar maça, assim como não usa faca para cortar madeira
 image: https://user-images.githubusercontent.com/23728459/131188661-9fd6453c-ba20-4a67-b26f-f0c180026ff9.jpg
 ---
 
-
-_Escrevi um texto bem legal sobre o um uso do [Scrapy]{:target="\_blank"},
-confira [aqui]{:target="\_blank"}._
-
 ![monitorado](https://user-images.githubusercontent.com/23728459/131188661-9fd6453c-ba20-4a67-b26f-f0c180026ff9.jpg){: style="float: left; margin-right: 1em;" class="img-responsive" height="40%" width="40%"}
 
-O [Open Knowledge Brasil]{:target="\_blank"} é um movimento que luta pelo
-conhecimento livre, um dos muitos projetos é o
-[Querido Diário]{:target="\_blank"}, o qual colaborei criando uma 
-[spider (aranha)]{:target="\_blank"}, para realizar a coleta de todos os
-diários oficiais do município de [Americana]{:target="\_blank"}, até o 
-momento foram 800 diários oficiais adicionados
-[nesta colaboração]{:target="\_blank"}. A principal ideia de uma spider, é
-andar em diversos links da internet de forma automatizada, geralmente para
-realizar a extração dessas informações web. Se você tem dúvida entre usar
-[Selenium]{:target="\_blank"}, [BeautifulSoap]{:target="\_blank"} e
-[Scrapy]{:target="\_blank"}, saiba que cada ferramenta tem sua utilidade,
-nesse caso o projeto utiliza o Scrapy, pois se trata de milhares de páginas.
+Quando estamos realizando uma tarefa, podemos ter à nossa disposição
+diferentes tipos de ferramentas, muitas vezes caímos no erro de criar algum
+tipo de afeto, algo que compromete a resolução do problema. Passamos a
+adorar usar Selenium, Scrapy, Curl, Requests ou qualquer que seja a
+ferramenta. É uma armadilha, não caia nessa, cada ferramenta tem um
+propósito de existência, caso contrário não haveria comunidades e empresas
+por trás delas.
+A ideia aqui é falar um pouco sobre diferentes ferramentas que podem ser
+usadas para realizar Webscraping, aquela prática super legal de extração
+de dados da internet, que pode ser em massa ou não. As vezes você só deseja
+saber se a informação do texto de uma página por exemplo foi alterado ou
+não, ou saber se uma estrutura do site foi modificada, ou se existem
+links quebrados no site...enfim.
 
-Qualquer pessoa pode colaborar, não
-importa se você pensa [assim ou assado, ou se é x ou y]{:target="\_blank"}.
+<h2>Scrapy, o trator</h2>
+
+Escrevi dois textos sobre Scrapy, um sobre como construí um projeto para
+baixar todas as frases de autores do site pensador.com (baixando 30 mil
+frases) e outro sobre como contribuí para o projeto OpenSource Querido
+Diário, onde automatizei o download de 800 diários oficiais da cidade de
+Americana.
+Nesses dois projetos, o grau de complexidade é médio, é necessário entrar
+em muitas páginas diferentes, as quais muitas vezes nem é humanamente
+possível fazer, visto que são milhares de páginas no caso do site pensadores
+, onde fazer isso manualmente é impensável. Mas o ponto, é que o Scrapy não
+utiliza um navegador, então não existe o tempo de renderização de uma página
+e essa é uma diferença importe para com o Selenium. Então, temos aqui uma
+afirmação importante: Se você não precisa por exemplo carregar um javascript
+que vai gerar o HTML da página, você já tem um ponto a favor do Scrapy!
+Outro ponto importante, é a complexidade do projeto, tempo é uma coisa
+importante, então acredito que se você precisa navegar em mais de 10 páginas
+...acredito que é considerável a utilização do Scrapy.
+Quer mais um ponto? Se você não precisa interagir com um javascript para
+gerar a página que você precisa fazer a extração, o Scrapy ganha mais um
+ponto! É possível que a pergunta "Mas como eu faria login em uma página, como funciona isso afinal?", nesse caso, é possível fazer login usando o POST,
+e o Scrapy tem as ferramentas necessárias para relizar isso.
+
+Aqui um exemplo de login:
 
 
-<h2>Clonando o repositório e configurando o ambiente</h2>
 
-O projeto tem algum tempo, então a nossa colaboração não foi a primeira, então
-vamos baixar primeiro o código já existente.
 
+<h2>Selenium, a empilhadeira</h2>
+
+O Selenium pode ser visto como uma espécie de empilhadeira quando pensamos
+em extração de informação de páginas na rede, sua criação na realidade, foi
+para a realização de testes (TDD por exemplo) em interfaces web. Imagina
+poder testar se um elemento está clicável ou não, sensacional né? Porém,
+pode ser usado para extração de informação ou automação de ações na internet, como é este caso que criei, onde automatizei publicação de posts no
+twitter. Então, quando queremos fazer testes de interface ou automatizar
+alguma ação, o Selenium tem ponto à favor! Porém, o Selenium utiliza um
+navegador, ele faz a renderização de páginas web, ou seja: pode interagir
+com um Javascript!
+
+<h2>Curl, o carro popular</h2>
+
+O Curl é um comando do Linux, ele não faz parte da Builtin do Bash, porém
+basta instalá-lo no sistema e você poderá fazer diversas requisições HTTP,
+entre o Curl e o Scrapy, a principal diferença é que o Scrapy tem uma
+estrutura complexa, onde a navegação, extração e tratamento dos dados (por
+exemplo colocar os dados em um banco), já é completamente integrado. Além
+disso, o Curl não faz a administração dos cookies (coisa que o Scrapy faz).
+
+Portanto, construir projetos simples de webscraping com Curl é uma coisa
+bem legal e rápida. Deixo aqui um exemplo:
 {% highlight bash %}
-git clone https://github.com/okfn-brasil/querido-diario
+curl -s https://www.folha.uol.com.br/ | fgrep -i "c-main-headline__title" | sed 's/.*title">//; s/<.*//'
 {% endhighlight %}
+<h2>Requests, o carro de luxo</h2>
 
-Depois disso, o projeto foi clonado para seu computador, sendo assim, temos
-boa parte do ambiente necessário, mas ainda precisamos de um pouco mais, no
-caso precisamos criar nosso ambiente virtual no python, para garantir que
-nosso sistema operacional não seja afetado.
-
-{% highlight bash %}
-pip3 install virtualenv
-virtualenv --python=python3.9 venv
-source venv/bin/activate
-{% endhighlight %}
-
-Agora com nosso ambiente criado e ativo (deve ter aparecido venv do lado
-esquerdo no seu terminal), agora podemos instalar os requerimentos do projeto.
-
-{% highlight bash %}
-pip install -r querido-diario/data_collection/requirements.txt
-{% endhighlight %}
-
-Depois disso, você tem o ambiente completo configurado no seu computador,
-podendo executar qualquer spider existente no projeto. Se você for até o
-diretório das spiders, poderá encontrar um punhado delas!
-
-{% highlight bash %}
-cd querido-diario/data_collection/gazette/spiders
-{% endhighlight %}
-
-Agora podemos executar por exemplo, a spider da cidade de Jaú, do Estado de
-São Paulo:
-
-{% highlight bash %}
-scrapy crawl sp_jau
-{% endhighlight %}
-
-Com esse comando, a spider será executada e todos os diários oficiais da cidade
-serão baixados no seu computador, hoje (27 de agosto de 2021) ela está funcinal.
-Mas além de executar, a ideia é criar uma spider nova, então notei no arquivo
-CITIES.md, que tem todas as cidades e as spiders existentes, que faltam muitas
-cidades. Peguei uma lista das 200 maiores cidades do Estado de SP e filtrei as
-que estavam faltando. A cidade de Americana é uma delas! Vamos fazer :)
-
-<h2>O nascimento da nossa Spider</h2>
-
-![spider](https://media4.giphy.com/media/aUPfvs5MOXpxm/giphy.gif?cid=ecf05e47h79nh42rkbl6q7s78jivfxc7rme8brewvk8uutwe&rid=giphy.gif&ct=g){: style="float: left; margin-right: 1em;" class="img-responsive" height="40%" width="40%"}
+O requests no Python pode ser comparado à um carro de luxo, por quê? Como
+ele tem suporte à Orientação a Objetos, é algo que consegue fazer parte de
+contruções mais complexas, porém se não fosse isso, seria um carro popular
+também, o funcionamento é algo muito parecido com o Curl, baseando-se
+apenas em requisições HTTP.
 
 Para criar nossa spider, basta usar o recurso do próprio Scrapy, ele já cria um modelo legal:
 
@@ -383,6 +385,6 @@ E aí, qual cidade você vai escolher para libertar?
 [URL]: https://pt.wikipedia.org/wiki/URL
 [processamento paralelo]: https://lcsvillela.github.io/bash-na-velocidade-da-luz.html
 [explicação teórica]: https://towardsdatascience.com/web-scraping-with-scrapy-theoretical-understanding-f8639a25d9cd
-[xpaths]: https://pt.wikipedia.org/wiki/XPath
+[xpath]: https://pt.wikipedia.org/wiki/XPath
 [vetor (array)]: https://pt.wikipedia.org/wiki/Arranjo_(computa%C3%A7%C3%A3o)
 [deputado devolver o dinheiro]: https://g1.globo.com/distrito-federal/noticia/apos-ser-flagrado-por-app-deputado-devolve-a-camara-r-727-por-13-refeicoes-no-mesmo-dia.ghtml
