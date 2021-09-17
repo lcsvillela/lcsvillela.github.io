@@ -4,8 +4,9 @@ title:  "Muitas ferramentas e uma ideia: Webscraping"
 date:   2021-09-16 23:00:34 -0300
 categories: python webscraping scrapy bash curl
 description: A gente não usa motosserra para descascar maça, assim como não usa faca para cortar madeira
-image: https://user-images.githubusercontent.com/23728459/131188661-9fd6453c-ba20-4a67-b26f-f0c180026ff9.jpg
+image: https://user-images.githubusercontent.com/23728459/133816523-42dc577a-ece7-4bf2-9fa2-160daf8b0334.jpeg
 ---
+
 
 ![ferramentas](https://media3.giphy.com/media/3oKIPqsXYcdjcBcXL2/giphy.gif?cid=ecf05e47e5jdeaqfllrxuhgmavywsfhcv7senamswlwipkmw&rid=giphy.gif&ct=g){: style="float: left; margin-right: 1em;" class="img-responsive" height="40%" width="40%"}
 
