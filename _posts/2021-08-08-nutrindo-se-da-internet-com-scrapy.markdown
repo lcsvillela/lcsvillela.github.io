@@ -192,7 +192,7 @@ class FrasesPipeline:
 {% endhighlight %}
 
 <h4>Explicação</h4>
-As funções open_spider e close_spider são executadas quando a spider inicia e finaliza um processo de coleta, já a
+Os métodos open_spider e close_spider são executadas quando a spider inicia e finaliza um processo de coleta, já a
 process_item é responsável por processar os dados extraídos, no caso os itens são transformados primeiro em uma estrutura
 de dicionário e depois em um JSON para então serem escritos no arquivo.json
 
