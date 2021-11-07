@@ -302,3 +302,4 @@ aleatórias.
 [esta biblioteca que criei]: https://github.com/lcsvillela/MakeTweetPy/blob/main/MakeTweet.py
 [Mac OS]: https://medium.com/dropout-analytics/selenium-and-geckodriver-on-mac-b411dbfe61bc
 [Windows]: https://medium.com/ananoterminal/ambientar-selenium-no-windows-3b880fa0e827
+[Geckodriver]: https://medium.com/beelabacademy/baixando-e-configurando-o-geckodriver-no-ubuntu-dc2fe14d91c
