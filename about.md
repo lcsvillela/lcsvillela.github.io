@@ -4,7 +4,11 @@ title: Sobre
 permalink: /sobre/
 ---
 
-Conheci na oitava série o Linux e desde então me aproximei do mundo da computação, estou cursando Ciência da Computação pela UNESP, tenho proximidade com C, Java, Python, Ruby, Bash e Pascal, sendo a última a linguagem mãe, a qual fui apresentado em um curso de TI. Um especial interesse em backend, porém me divirto no frontend com Ruby on Rails e Django.
-Apesar de ter preferência de uso do kernel Linux, o regedit é algo que depois que a gente entra, nunca mais sai.
+Conheci na oitava série o Linux e desde então fechei as janelas e abri as portas, estou cursando Ciência da Computação pela UNESP, tenho proximidade com C, Java, Python, Ruby, Bash e Pascal, sendo a última a linguagem mãe, a qual
+fui apresentado em um curso de TI.
 
-Hoje estou realizando estágio em uma empresa em São José do Rio Preto, onde trabalho com monitoramento de redes usando Zabbix, PowerShell, Bash, Python e algumas outras tecnologias.
+Trabalhei em uma empresa de monitoramento de ambientes utilizando a plataforma Zabbix, para criar os
+monitoramentos utilizava cotidianamente Powershell, Bash, SQL, Python e outras tecnologias. Atualmente estou
+trabalhando em uma empresa em que faço Data Scraping, além disso, participo do projeto Querido Diário onde também
+é realizado Data Scraping, porém com o intuito de monitorar ações governamentais.
+
