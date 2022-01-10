@@ -5,6 +5,7 @@ date:   2021-09-16 23:00:34 -0300
 categories: python webscraping scrapy bash curl
 description: A gente não usa motosserra para descascar maça, assim como não usa faca para cortar madeira
 image: https://user-images.githubusercontent.com/23728459/133816523-42dc577a-ece7-4bf2-9fa2-160daf8b0334.jpeg
+thumbnail: https://user-images.githubusercontent.com/23728459/133858754-3a774605-778e-4d50-889f-cd8e5de263c3.png
 ---
 
 
@@ -83,7 +84,8 @@ Porém, não se iluda, é perfeitamente possível utilizar o Scrapy para
 puxar informações de páginas que são carregadas utilizando javascript,
 para isso existe a ferramenta [scrapy-splash]{:target="\_blank"}, que consegue renderizar a
 página web que você deseja. O truque é bem legal, consiste basicamente
-em criar um serviço web que consegue renderizar a página em javascript.
+em criar um serviço web que consegue renderizar a página em javascript, porém isso só é
+_realmente_ necessário quando temos uma situação de [oauth2]{:target="\_blank"} ou algo do gênero.
 
 
 <h2>Selenium, o machado</h2>
@@ -185,3 +187,4 @@ curl -s https://www.folha.uol.com.br/ | fgrep -i "c-main-headline__title" | sed 
 [explicação teórica]: https://towardsdatascience.com/web-scraping-with-scrapy-theoretical-understanding-f8639a25d9cd
 [xpath]: https://pt.wikipedia.org/wiki/XPath
 [vetor (array)]: https://pt.wikipedia.org/wiki/Arranjo_(computa%C3%A7%C3%A3o)
+[oauth2]: https://oauth.net/2/
