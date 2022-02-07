@@ -4,11 +4,7 @@ title: Sobre
 permalink: /sobre/
 ---
 
-Conheci na oitava série o Linux e desde então fechei as janelas e abri as portas, estou cursando Ciência da Computação pela UNESP, tenho proximidade com C, Java, Python, Ruby, Bash e Pascal, sendo a última a linguagem mãe, a qual
-fui apresentado em um curso de TI.
+Cursando Ciência da Computação na UNESP, trabalhei por 1 ano com monitoramento de ambientes utilizando Zabbix, para isso fazia uso das linguagens Python, Bash, Powershell e SQL. Além disso, presto serviços de automação de processos(RPA) e para extração de dados(Scraping) massivos de ambientes Web (sites em geral, incluindo redes sociais), para isso utilizo as linguagens Bash (Curl) e Python (Requests, Scrapy, Selenium).
+Realizo a armazenagem e exibição dos dados utilizando o Django, sendo assim é possível utilizar MySQL, PostgreSQL, SQLite e afins, além de que é possível criar APIs tanto pelo próprio Django como pela FastAPI.
 
-Trabalhei em uma empresa de monitoramento de ambientes utilizando a plataforma Zabbix, para criar os
-monitoramentos utilizava cotidianamente Powershell, Bash, SQL, Python e outras tecnologias. Atualmente estou
-trabalhando em uma empresa em que faço Data Scraping, além disso, participo do projeto Querido Diário onde também
-é realizado Data Scraping, porém com o intuito de monitorar ações governamentais.
-
+É possível me contatar pelas redes sociais!
