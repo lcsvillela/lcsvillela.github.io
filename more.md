@@ -14,4 +14,4 @@ Consultoria de TI nas seguintes soluções
 - outros
 
 
-Me conte seu problema pelo [telegram](http://www.google.com){: .btn}
+Me conte seu problema pelo [telegram](https://t.me/lcsvillelabot){: .btn}
