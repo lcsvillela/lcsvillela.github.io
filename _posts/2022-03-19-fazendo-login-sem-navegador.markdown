@@ -4,7 +4,7 @@ title:  "Acessando uma conta em um site sem navegador"
 date:   2022-03-19 01:00:34 -0300
 categories: python scrapy requests
 description: Muitas vezes existe uma camada de segurança em sites ou mesmo em dispositivos locais, faça a autenticação e seja feliz!
-image: https://user-images.githubusercontent.com/23728459/159109781-13740661-9255-4ebf-891b-e492b86ff91a.png 
+image: https://user-images.githubusercontent.com/23728459/159110003-31f82a83-843b-4249-95f6-7e0598bf4c6a.png 
 thumbnail: https://user-images.githubusercontent.com/23728459/159109781-13740661-9255-4ebf-891b-e492b86ff91a.png
 ---
 
