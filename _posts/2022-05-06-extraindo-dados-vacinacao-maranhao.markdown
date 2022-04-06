@@ -5,7 +5,7 @@ date:   2022-04-06 00:59:40 -0300
 categories: python scraping
 description: Muitos dados de vacinação do Maranhão estão disponíveis!
 image: https://user-images.githubusercontent.com/23728459/161891618-ff8dcd70-ea4c-44f3-8108-16eb2ea44d6c.png
-thumbnail: https://user-images.githubusercontent.com/23728459/161891618-ff8dcd70-ea4c-44f3-8108-16eb2ea44d6c.png
+thumbnail: https://user-images.githubusercontent.com/23728459/161893977-42dec7ff-49ef-482b-b867-9956643ca9b4.png
 ---
 
 
