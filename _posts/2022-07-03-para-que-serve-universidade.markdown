@@ -60,7 +60,8 @@ pessoas vivas e próximas?
 
 <h3>Possíveis soluções para ter uma 'universitas'?</h3>
 
-Fale com as entidades e docentes do seu campus e proponha atividades
+Fale com as entidades e docentes do seu campus ou onde quer que você esteja
+e proponha atividades
 para ensinar o que você sabe, procure pessoas que saibam assuntos
 que você não sabe e instigue a ensinarem também. Se uma
 entidade demonstrar pouco interesse
