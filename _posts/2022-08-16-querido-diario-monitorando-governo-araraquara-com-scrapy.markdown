@@ -8,10 +8,10 @@ image: https://user-images.githubusercontent.com/23728459/184834208-b979fac0-226
 ---
 
 Um tempo atrás, escrevi um pouco sobre como tinha realizado uma
-contribuição para coletar os [diários oficiais de Americana].
+contribuição para coletar os [diários oficiais de Americana]{:target="\_blank"}.
 Porém, tem alguns erros e imprecisões por lá e recomendo a leitura
 apenas para caráter informativo. Se você quiser seguir algo, este está
-com certeza melhor!
+com certeza melhor e é para a [cidade de Araraquara]{:target="\_blank"}!
 
 <h2>Preparando o terreno</h2>
 
@@ -332,3 +332,4 @@ Espero que este relato tenha sido
 [no Windows]: https://python.org.br/instalacao-windows/
 [diários de Araraquara]: https://www.diariooficialcmararaquara.sp.gov.br
 [diários oficiais de Americana]: https://lcsvillela.com/querido-diario-monitorando-governo-com-scrapy.html
+[cidade de Araraquara]: https://github.com/okfn-brasil/querido-diario/pull/603
