@@ -94,7 +94,7 @@ serão baixados no seu computador, hoje (16 de agosto de 2022) ela está funcina
 Mas além de executar, a ideia é criar uma spider nova, então notei no arquivo
 CITIES.md, que tem todas as cidades e as spiders existentes, que faltam muitas
 cidades. Peguei uma lista das 200 maiores cidades do Estado de SP e filtrei as
-que estavam faltando. A cidade de Americana é uma delas! Vamos fazer :)
+que estavam faltando. A cidade de Araraquara é uma delas! Vamos fazer :)
 
 <h2>Criando a spider</h2>
 
