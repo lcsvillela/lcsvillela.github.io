@@ -281,7 +281,7 @@ git add .
 Damos início ao nosso commit:
 
 {% highlight bash %}
-git commit -m "Add spider Americana/SP"
+git commit -m "Add spider Araraquara/SP"
 {% endhighlight %}
 
 Subimos nosso código para o repositório:
