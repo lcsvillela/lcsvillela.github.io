@@ -4,11 +4,11 @@ title:  "Descobrindo computadores na rede"
 date:   2011-01-28 10:00:34 -0300
 categories: Linux network 
 description: Como descobrir computadores na rede? 
-image: 
-thumbnail: 
+image: https://user-images.githubusercontent.com/23728459/231237583-7d5cacf2-3088-4280-93a6-222cc8468d2c.png
+thumbnail: https://user-images.githubusercontent.com/23728459/231237583-7d5cacf2-3088-4280-93a6-222cc8468d2c.png
 ---
 
- Quando estamos numa rede, algo muito útil em diversas situações é ver quais computadores existem nesta rede. Há vários maneiras de se fazer isso. Hoje irei ensinar como fazer isso usando o netdiscover, que é bem simples.
+Quando estamos numa rede, algo muito útil em diversas situações é ver quais computadores existem nesta rede. Há vários maneiras de se fazer isso. Hoje irei ensinar como fazer isso usando o netdiscover, que é bem simples.
 
 O netdiscover faz um scan na rede usando o protocolo arp, ou seja, você não precisa ter um ip na rede. Por exemplo, quando você conecta o seu sistema GNU/Linux em uma rede windows, ele não ira adquirir um ip, mas será possivel ver as máquinas do mesmo jeito, é possível ver o ip das máquinas e o Mac Adress (: 
 
