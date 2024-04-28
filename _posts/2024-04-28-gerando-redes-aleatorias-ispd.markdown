@@ -18,7 +18,7 @@ nesse caso entram os engenheiros civis.
 
 Mas no caso de sistemas computacionais distribuídos, precisamos de computadores,
 muitas vezes cada computador custa no Brasil o valor de uma casa ou um carro,
-pois não estamos falando de notebooks do varejo. São Máquinas que ficam
+pois não estamos falando de notebooks do varejo. São máquinas que ficam
 empilhadas em armários próprios, em salas com resfriamento, muitas vezes
 centenas, milhares ou até dezenas de milhares de máquinas.
 
