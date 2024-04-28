@@ -4,7 +4,8 @@ title: Sobre
 permalink: /sobre/
 ---
 
-Cursando Ciência da Computação na UNESP, trabalhei com monitoramento de ambientes utilizando Zabbix,
+Mestrando no INF UFRGS e formado em Ciência da Computação na UNESP,
+trabalhei com monitoramento de ambientes utilizando Zabbix,
 para isso fazia uso das linguagens Python, Bash, Powershell e SQL. Já prestei serviços de automação de
 processos(RPA) e para extração de dados(Scraping) massivos de ambientes Web
 (sites em geral, incluindo redes sociais), para isso utilizo as linguagens Bash (Curl) e Python

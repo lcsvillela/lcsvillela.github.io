@@ -20,7 +20,7 @@
 
 title: Lucas Villela
 description: >- # this means to ignore newlines until "baseurl:"
-   Cursando Ciência da Computação na UNESP/IBILCE. Todos os textos que aqui estão foram escritos por mim e autorizo cópia com citação da fonte. 
+   Mestrando na INF UFRGS e formado em Ciência da Computação na UNESP/IBILCE. Todos os textos que aqui estão foram escritos por mim e autorizo cópia com citação da fonte. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://lcsvillela.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lcsvillela
