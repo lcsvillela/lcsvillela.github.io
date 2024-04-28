@@ -4,7 +4,7 @@ title:  "Gerando redes aleatórias no iSPD e automatizando"
 date:   2024-04-28 00:00:34 -0300
 categories: bash shell java simulador ispd
 description: gerando redes aleatórias no iSPD
-image: https://github.com/lcsvillela/lcsvillela.github.io/assets/23728459/1cb    2b315-71c7-4586-b815-5b4d051279d4
+image: https://github.com/lcsvillela/lcsvillela.github.io/assets/23728459/a7bf58b2-b451-433e-a3c0-6a524481d5ba
 thumbnail: https://github.com/lcsvillela/lcsvillela.github.io/assets/23728459/a7bf58b2-b451-433e-a3c0-6a524481d5ba
 ---
 
