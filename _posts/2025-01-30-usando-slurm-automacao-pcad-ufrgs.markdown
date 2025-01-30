@@ -4,8 +4,8 @@ title:  "Gerenciando tarefas no Slurm e automatizando"
 date:   2025-01-30 03:00:34 -0300
 categories: slurm hpc bash linux
 description: Computação de alto desempenho com Slurm!
-image: https://github.com/lcsvillela/lcsvillela.github.io/assets/23728459/85b7b8d1-35a1-4970-a660-95cd39410e12 
-thumbnail: https://github.com/lcsvillela/lcsvillela.github.io/assets/23728459/85b7b8d1-35a1-4970-a660-95cd39410e12
+image: https://github.com/user-attachments/assets/e2217870-ef98-44d5-a59c-b0a08101792a 
+thumbnail: https://github.com/user-attachments/assets/e2217870-ef98-44d5-a59c-b0a08101792a
 ---
 
 <h2>O que é o Slurm?</h2>
