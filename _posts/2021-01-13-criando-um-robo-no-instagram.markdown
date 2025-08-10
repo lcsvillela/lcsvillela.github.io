@@ -4,9 +4,8 @@ title:  "Criando um robô para o seu Instagram"
 date:   2021-01-13 16:32:34 -0300
 categories: instagram 
 image: https://github.com/user-attachments/assets/e58f4722-3014-4239-a632-1ad52b1146a8
+thumbnail: https://github.com/user-attachments/assets/e58f4722-3014-4239-a632-1ad52b1146a8
 ---
-
-![image](https://github.com/user-attachments/assets/2a78c59f-9f82-4e82-826d-03d706bcce5d){: style="float: left" class="img-responsive" height="30%" width="30%"}
 
 Todo ano ocorre o evento [EuroPython]{:target="_blank"}, sendo realizada a apresentação de projetos e mudanças na linguagem [Python]{:target="_blank"}. Em uma dessas palestras, estava o [Tim Großmann]{:target="_blank"} falando sobre o [Instapy]{:target="_blank"} (você pode ver o [projeto aqui]{:target="_blank"}), que consiste em um [framework]{:target="_blank"} para a automação de ações nas redes sociais. O fato é que as redes sociais são justamente o contrário do nome: são redes antissociais, que causam [problemas]{:target="_blank"} e [mais problemas]{:target="_blank"} psicológicos significativos. Ou seja, se podemos automatizar nossas ações, podemos nos afastar de tais problemas e, de quebra, conseguir seguir pessoas de verdade.
 
