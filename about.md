@@ -11,4 +11,4 @@ processos(RPA) e para extração de dados(Scraping) massivos de ambientes Web
 (sites em geral, incluindo redes sociais), para isso utilizo as linguagens Bash (Curl) e Python
 (Requests, Scrapy, Selenium) e realizo construção de sistemas Web com Django.
 
-Gosto de jogar [xadrez]https://lichess.org/@/lcsvillela{:target="\_blank"} e outros jogos de tabuleiro.
+Gosto de jogar [xadrez](https://lichess.org/@/lcsvillela){:target="\_blank"} e outros jogos de tabuleiro.
