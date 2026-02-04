@@ -226,7 +226,7 @@ próximo loop.
 
 <h2 id="2">2 - Como Executar pela BotCity? </h2>
 
-<iframe width="995" height="561" src="https://www.youtube.com/embed/IsFYU6Kfv5g" title="Telegram bot do Cinema em POA com BotCity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="705" height="301" src="https://www.youtube.com/embed/IsFYU6Kfv5g" title="Telegram bot do Cinema em POA com BotCity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2 id="3">3 - Conclusão</h2>
 
